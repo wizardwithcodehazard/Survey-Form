@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><u>SURVEY FORM</u></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title"><u>SURVEY FORM</u></h1>
+  
+  <p id="description">Please fill out the following survey:</p>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required>
+
+
+    <label for="dropdown">Which option describes you the best:</label>
+    <select id="dropdown">
+      <option value="1">Undergraduate Student</option>
+      <option value="2">Post-graduate Student</option>
+      <option value="3">Working Professional</option>
+      <option value="4">Other</option>
+    </select>
+<br></br>
+
+<br></br>
+    <fieldset>
+      <legend>Do you have any prior knowledge about programming:</legend>
+        <label for="yes"><input value="1" id="yes" type="radio" name="answer" class="inline" checked /> Yes</label>
+        <label for="no"><input value="2" id="no" type="radio" name="answer" class="inline" /> No</label>
+      </fieldset>
+     <br></br>
+      <fieldset>
+      <legend>Choose the programing language:</legend>
+       <label value="c" for="checkbox1"><input type="checkbox" id="checkbox1" name="checkbox" value="checkbox">  C</input></label>
+       <label for="checkbox2"><input type="checkbox" id="checkbox2" name="checkbox" value="checkbox">  Java</input></label>
+       <label for="checkbox3"><input type="checkbox" id="checkbox3" name="checkbox" value="checkbox">  Python</input></label>
+       <label for="checkbox4"><input type="checkbox" id="checkbox4" name="checkbox" value="checkbox">  C#</input></label>
+       <label for="checkbox5"><input type="checkbox" id="checkbox5" name="checkbox" value="checkbox">  Django</input></label>
+</fieldset>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
+
+
+
+
+
+    
+
